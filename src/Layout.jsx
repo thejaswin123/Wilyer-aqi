@@ -1,14 +1,11 @@
 import React from 'react'
-import Cards from './Components/cards';
 
-function Layout({children}) {
-    
+
+const Layout = (props) =>{
     return (
         <div>
-        <Cards/>
-        {/* <div className='container mx-auto p-4 lg:px-20'>{children}</div> */}
+            {props.children}
         </div>
     );
 }
-
-export default Layout;
+ export default Layout;
